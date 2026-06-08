@@ -8,6 +8,12 @@ class userController{
         const result = await userService.createUser(req.body);
         successResponse(res,"User registered successfully",result);
     }
+
+    //GET ALL USERS
+    async getAllUsers(req,res){
+        const result = await userService.getAllUsers();
+        successResponse(res,"users fetched",result);
+    }
 }
 
 export default new userController();

@@ -19,6 +19,12 @@ class userService {
         });
         return newUser;
     }
+
+    //GET ALL USERS
+    async getAllUsers(){
+        const users = await userRepository.getAllUsers();
+        return users;
+    }
 }
 
 export default new userService();

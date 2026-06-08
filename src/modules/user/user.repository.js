@@ -14,6 +14,12 @@ class userRespository{
         });
         return user;
     }
+
+    //GET ALL USERS
+    async getAllUsers(){
+        const users = await userModel.find();
+        return users;
+    }
 }
 
 export default new userRespository();
