@@ -9,7 +9,7 @@ const app = express();
 //MIDDLEWARES
 app.use(express.json());
 app.use(cors({
-    origin: "http://localhost:5173",
+    origin: "https://crud-app-client-ecru.vercel.app",
     credentials:true
 }));
 
